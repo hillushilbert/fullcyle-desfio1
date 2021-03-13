@@ -1,0 +1,13 @@
+# compose syntax version.
+version: "3.6"
+
+# services declaration.
+services:
+  # MySQL
+  app:
+    build: 
+      context: ./
+    image: hillushilbert/fullcycle-d1-golang
+    container_name: golang
+    volumes:
+      - .:/go/src/app
