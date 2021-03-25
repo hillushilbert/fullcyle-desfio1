@@ -3,11 +3,12 @@ version: "3.6"
 
 # services declaration.
 services:
-  # MySQL
+  # golang
   app:
     build: 
       context: ./
     image: hillushilbert/fullcycle-d1-golang
     container_name: golang
     volumes:
-      - .:/go/src/app
+      - ./src:/go/src/app
+
